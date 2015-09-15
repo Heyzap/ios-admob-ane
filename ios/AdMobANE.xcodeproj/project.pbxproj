@@ -1,0 +1,276 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5064C94E1BA8BB0700A41D7B /* AdMobANE.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5064C94D1BA8BB0700A41D7B /* AdMobANE.h */; };
+		5064C9501BA8BB0700A41D7B /* AdMobANE.m in Sources */ = {isa = PBXBuildFile; fileRef = 5064C94F1BA8BB0700A41D7B /* AdMobANE.m */; };
+		5064C95C1BA8C42600A41D7B /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5064C95B1BA8C42600A41D7B /* GoogleMobileAds.framework */; settings = {ASSET_TAGS = (); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5064C9481BA8BB0700A41D7B /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				5064C94E1BA8BB0700A41D7B /* AdMobANE.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		5009A9141BA8BB4000532FA9 /* FlashRuntimeExtensions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlashRuntimeExtensions.h; sourceTree = "<group>"; };
+		5064C94A1BA8BB0700A41D7B /* libAdMobANE.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libAdMobANE.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		5064C94D1BA8BB0700A41D7B /* AdMobANE.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AdMobANE.h; sourceTree = "<group>"; };
+		5064C94F1BA8BB0700A41D7B /* AdMobANE.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AdMobANE.m; sourceTree = "<group>"; };
+		5064C95B1BA8C42600A41D7B /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMobileAds.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5064C9471BA8BB0700A41D7B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5064C95C1BA8C42600A41D7B /* GoogleMobileAds.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5064C9411BA8BB0700A41D7B = {
+			isa = PBXGroup;
+			children = (
+				5064C9581BA8BBE500A41D7B /* Vendor */,
+				5009A9141BA8BB4000532FA9 /* FlashRuntimeExtensions.h */,
+				5064C94C1BA8BB0700A41D7B /* AdMobANE */,
+				5064C94B1BA8BB0700A41D7B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5064C94B1BA8BB0700A41D7B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5064C94A1BA8BB0700A41D7B /* libAdMobANE.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5064C94C1BA8BB0700A41D7B /* AdMobANE */ = {
+			isa = PBXGroup;
+			children = (
+				5064C94D1BA8BB0700A41D7B /* AdMobANE.h */,
+				5064C94F1BA8BB0700A41D7B /* AdMobANE.m */,
+			);
+			path = AdMobANE;
+			sourceTree = "<group>";
+		};
+		5064C9581BA8BBE500A41D7B /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				5064C95B1BA8C42600A41D7B /* GoogleMobileAds.framework */,
+			);
+			path = Vendor;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5064C9491BA8BB0700A41D7B /* AdMobANE */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5064C9531BA8BB0700A41D7B /* Build configuration list for PBXNativeTarget "AdMobANE" */;
+			buildPhases = (
+				5064C9461BA8BB0700A41D7B /* Sources */,
+				5064C9471BA8BB0700A41D7B /* Frameworks */,
+				5064C9481BA8BB0700A41D7B /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AdMobANE;
+			productName = AdMobANE;
+			productReference = 5064C94A1BA8BB0700A41D7B /* libAdMobANE.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5064C9421BA8BB0700A41D7B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = Heyzap;
+				TargetAttributes = {
+					5064C9491BA8BB0700A41D7B = {
+						CreatedOnToolsVersion = 7.0;
+					};
+				};
+			};
+			buildConfigurationList = 5064C9451BA8BB0700A41D7B /* Build configuration list for PBXProject "AdMobANE" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 5064C9411BA8BB0700A41D7B;
+			productRefGroup = 5064C94B1BA8BB0700A41D7B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5064C9491BA8BB0700A41D7B /* AdMobANE */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5064C9461BA8BB0700A41D7B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5064C9501BA8BB0700A41D7B /* AdMobANE.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		5064C9511BA8BB0700A41D7B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		5064C9521BA8BB0700A41D7B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5064C9541BA8BB0700A41D7B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/AdMobANE",
+					"$(PROJECT_DIR)/Vendor",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		5064C9551BA8BB0700A41D7B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/AdMobANE",
+					"$(PROJECT_DIR)/Vendor",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5064C9451BA8BB0700A41D7B /* Build configuration list for PBXProject "AdMobANE" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5064C9511BA8BB0700A41D7B /* Debug */,
+				5064C9521BA8BB0700A41D7B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5064C9531BA8BB0700A41D7B /* Build configuration list for PBXNativeTarget "AdMobANE" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5064C9541BA8BB0700A41D7B /* Debug */,
+				5064C9551BA8BB0700A41D7B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5064C9421BA8BB0700A41D7B /* Project object */;
+}

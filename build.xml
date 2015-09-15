@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="AdMob ANE Build Script" default="all">
+
+    <record name="build.log" loglevel="verbose" action="start" />
+
+    <!-- Config File -->
+    <property file="build.config"/>
+
+    <macrodef name="platforms" description="Run Ant on all Platforms">
+        <attribute name="target" default="all"/>
+
+        <sequential>
+            <subant inheritall="false" target="@{target}">
+                <property name="output.dir" value="${output.dir}" />
+                <property name="air.sdk" value="${air.sdk}" />
+                <fileset dir="." includes="*/build.xml"/>
+            </subant>
+        </sequential>
+    </macrodef>
+
+    <target name="build" description="Build on all platforms.">
+        <platforms target="build"/>
+    </target>
+
+    <target name="package" depends="build" description="Package ANE">
+        <mkdir dir="${output.dir}/" />
+
+        <!-- Copy over library.swf to each platform output -->
+        <copy file="${actionscript.dir}/${output.dir}/library.swf" todir="${ios.dir}/${output.dir}" failonerror="true" />
+        <copy file="${actionscript.dir}/${output.dir}/library.swf" todir="${actionscript.dir}/${output.dir}/default" failonerror="true" />
+
+        <!-- Compile ANE -->
+        <exec executable="${air.sdk}/bin/adt" failonerror="true">
+            <arg value="-package"/>
+            <arg value="-target"/>
+            <arg value="ane"/>
+            <arg value="${output.dir}/${output.name}"/>
+            <arg value="extension.xml"/>
+            <arg line="-swc ${actionscript.dir}/${output.dir}/actionscript.swc"/>
+            <arg line="-platform iPhone-ARM -C ${ios.dir}/${output.dir} ."/>
+            <arg line="-platform default -C ${actionscript.dir}/${output.dir}/default ."/>
+        </exec>
+    </target>    
+
+    <target name="clean">
+        <delete dir="${output.dir}" />
+        <delete file="build.log" />
+        
+        <!-- Run clean on all other platforms -->
+        <platforms target="clean" />
+    </target>
+
+    <target name="all" depends="clean, package" />
+    
+</project>
