@@ -5,7 +5,7 @@ A thin wrapper around the Google AdMob iOS SDK for use on Heyzap's mediation.
 Pull requests and issues are welcome.
 
 #### AdMob iOS SDK Version
-?
+7.10.1
 
 #### Adding to your project
 
@@ -26,8 +26,6 @@ Pull requests and issues are welcome.
 
 After making the necessary modifications, build the new ANE by following the [building](#building) instructions below.
 
-#### Building
-
 ##### Requirements:
 - Mac OS X
 - Xcode
@@ -35,7 +33,8 @@ After making the necessary modifications, build the new ANE by following the [bu
 - [AIR SDK](http://www.adobe.com/devnet/air/air-sdk-download.html)
 
 ##### Building:
-- Add the path to your AIR SDK in `build.config` (under `air.sdk`)
+- Make a `build.config` by copying `build.config.dist` (your local config file)
+- Change the path to the AIR SDK in `build.config` (named `air.sdk`)
 - From the root of the repository, run `ant`.
 
-After build completes, the native extension will be in `bin/AdMob.ane`.
+After build completes, the native extension will be in `bin/UnityAds.ane`.
