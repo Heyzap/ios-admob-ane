@@ -26,6 +26,9 @@ Pull requests and issues are welcome.
 
 After making the necessary modifications, build the new ANE by following the [building](#building) instructions below.
 
+
+#### Building
+
 ##### Requirements:
 - Mac OS X
 - Xcode
@@ -37,4 +40,4 @@ After making the necessary modifications, build the new ANE by following the [bu
 - Change the path to the AIR SDK in `build.config` (named `air.sdk`)
 - From the root of the repository, run `ant`.
 
-After build completes, the native extension will be in `bin/UnityAds.ane`.
+After build completes, the native extension will be in `bin/AdMob.ane`.
