@@ -11,8 +11,11 @@
         <option>-framework MessageUI</option>
         <option>-framework AudioToolbox</option>
         <option>-framework CoreTelephony</option>
+        <option>-framework CoreGraphics</option>
+        <option>-framework CoreBluetooth</option>
         <option>-framework EventKit</option>
         <option>-framework EventKitUI</option>
+        <option>-framework GLKit</option>
     </linkerOptions>
 
     <packagedDependencies>
