@@ -2,17 +2,24 @@
     <sdkVersion>7.0</sdkVersion>
     
     <linkerOptions>
-        <option>-framework Foundation</option>
-        <option>-framework AdSupport</option>
-        <option>-framework StoreKit</option>
         <option>-framework AVFoundation</option>
+        <option>-framework CoreGraphics</option>
         <option>-framework CoreMedia</option>
-        <option>-framework SystemConfiguration</option>
-        <option>-framework MessageUI</option>
-        <option>-framework AudioToolbox</option>
+        <option>-framework CoreMotion</option>
         <option>-framework CoreTelephony</option>
-        <option>-framework EventKit</option>
-        <option>-framework EventKitUI</option>
+        <option>-framework CoreVideo</option>
+        <option>-framework Foundation</option>
+        <option>-framework GLKit</option>
+        <option>-framework JavaScriptCore</option>
+        <option>-framework MediaPlayer</option>
+        <option>-framework MessageUI</option>
+        <option>-framework MobileCoreServices</option>
+        <option>-framework OpenGLES</option>
+        <option>-framework SafariServices</option>
+        <option>-framework StoreKit</option>
+        <option>-framework SystemConfiguration</option>
+        <option>-framework UIKit</option>
+        <option>-framework WebKit</option>
     </linkerOptions>
 
     <packagedDependencies>
