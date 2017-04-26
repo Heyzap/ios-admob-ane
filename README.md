@@ -4,8 +4,8 @@ A thin wrapper around the Google AdMob iOS SDK for use on Heyzap's mediation.
 
 Pull requests and issues are welcome.
 
-#### AdMob iOS SDK Version
-?
+#### Included AdMob iOS SDK Version
+7.18.0
 
 #### Adding to your project
 
